@@ -94,6 +94,34 @@ public class HlavniProgram {
     zofka.turnLeft(90);
   }
 
+  public void nakresliOsmiuhelnik() {
+    for (int i = 0; i<8; i++){
+      zofka.move(40);
+      zofka.turnRight(45);
+    }
+  }
+
+
+  public void nakresliKolecko() {
+    for (int i = 0; i<17; i++){
+      zofka.move(10);
+      zofka.turnLeft(20);
+    }
+  }
+
+  public void nakresliSlunicko() {
+    for (int i = 0; i<19; i++){
+      zofka.move(10);
+      zofka.turnLeft(90);
+      zofka.move(20);
+      zofka.penUp();
+      zofka.turnRight(180);
+      zofka.move(20);
+      zofka.turnLeft(90);
+      zofka.penDown();
+      zofka.turnRight(20);
+    }
+  }
 
 
 
@@ -104,7 +132,37 @@ public class HlavniProgram {
 
     //TODO implementace domácího úkolu
 
+    /* úkol 1. část
     nakresliPrasatko();
+     */
+
+    zofka.penUp();
+    zofka.turnLeft(90);
+    zofka.move(400);
+    zofka.penDown();
+    nakresliOsmiuhelnik();
+
+    zofka.penUp();
+    zofka.turnLeft(180);
+    zofka.move(100);
+    zofka.penDown();
+    nakresliKolecko();
+    zofka.penUp();
+    zofka.turnLeft(20);
+    zofka.move(100);
+
+    zofka.turnLeft(90);
+    zofka.move(50);
+    zofka.penUp();
+    nakresliSlunicko();
+    zofka.penUp();
+    zofka.turnRight(90);
+    zofka.move(150);
+    zofka.turnLeft(110);
+
+
+
+
 
   }
 
