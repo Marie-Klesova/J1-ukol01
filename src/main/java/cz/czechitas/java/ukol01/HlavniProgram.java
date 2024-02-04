@@ -123,6 +123,20 @@ public class HlavniProgram {
     }
   }
 
+  public void nakresliM() {
+    zofka.penDown();
+    zofka.move(100);
+    zofka.turnRight(135);
+    zofka.move(50);
+    zofka.turnLeft(90);
+    zofka.move(50);
+    zofka.turnRight(135);
+    zofka.move(100);
+    zofka.penUp();
+    zofka.turnLeft(90);
+    zofka.move(20);
+    zofka.turnLeft(90);
+  }
 
 
 
@@ -165,6 +179,7 @@ public class HlavniProgram {
     */
 
   // Úkol - 3. část
+
     zofka.penUp();
     zofka.turnLeft(90);
     zofka.move(300);
@@ -238,7 +253,16 @@ public class HlavniProgram {
 
     nakresliDomecek();
 
+    // Úkol - 4. část
+    zofka.penUp();
+    zofka.turnLeft(180);
+    zofka.move(200);
+    zofka.turnLeft(180);
+    zofka.penDown();
 
+
+
+    nakresliM();
 
 
 
