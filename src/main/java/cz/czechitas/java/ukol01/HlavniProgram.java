@@ -138,6 +138,94 @@ public class HlavniProgram {
     zofka.turnLeft(90);
   }
 
+  public void nakresliA() {
+    zofka.penDown();
+    zofka.turnRight(20);
+    zofka.move(110);
+    zofka.turnRight(140);
+    zofka.move(110);
+    zofka.penUp();
+    zofka.turnLeft(180);
+    zofka.move(55);
+    zofka.turnLeft(70);
+    zofka.penDown();
+    zofka.move(40);
+    zofka.penUp();
+    zofka.turnLeft(180);
+    zofka.move(40);
+    zofka.turnRight(70);
+    zofka.move(55);
+    zofka.turnLeft(70);
+
+    zofka.move(20);
+    zofka.turnLeft(90);
+  }
+
+  public void nakresliPulkolecko() {
+    for (int i = 0; i<180; i++){
+      zofka.move(1.5 * Math.PI * 40/360);
+      zofka.turnRight(1);
+    }
+  }
+
+
+
+  public void nakresliR() {
+    zofka.penDown();
+    zofka.move(100);
+    zofka.turnRight(90);
+    nakresliPulkolecko();
+
+    zofka.turnLeft(90);
+    zofka.turnLeft(45);
+    zofka.move(55);
+    zofka.penUp();
+    zofka.turnLeft(45);
+
+    zofka.move(20);
+    zofka.turnLeft(90);
+  }
+
+  public void nakresliI() {
+    zofka.penDown();
+    zofka.move(100);
+    zofka.turnRight(180);
+    zofka.move(100);
+    zofka.penUp();
+
+    zofka.turnLeft(90);
+    zofka.move(20);
+    zofka.turnLeft(90);
+  }
+
+  public void nakresliE() {
+    zofka.penDown();
+    zofka.move(100);
+    zofka.turnRight(90);
+    zofka.move(30);
+    zofka.penUp();
+    zofka.turnLeft(180);
+    zofka.move(30);
+    zofka.turnLeft(90);
+    zofka.move(50);
+    zofka.turnLeft(90);
+    zofka.penDown();
+    zofka.move(30);
+    zofka.penUp();
+    zofka.turnLeft(180);
+    zofka.move(30);
+    zofka.turnLeft(90);
+    zofka.move(50);
+    zofka.turnLeft(90);
+    zofka.penDown();
+    zofka.move(30);
+    zofka.penUp();
+
+    zofka.move(20);
+    zofka.turnLeft(90);
+  }
+
+
 
 
 
@@ -260,10 +348,11 @@ public class HlavniProgram {
     zofka.turnLeft(180);
     zofka.penDown();
 
-
-
     nakresliM();
-
+    nakresliA();
+    nakresliR();
+    nakresliI();
+    nakresliE();
 
 
 
